@@ -1,0 +1,26 @@
+venv:
+python3 -m venv ./mappo_env/
+source ./mappo_env/bin/activate
+
+Inside venv:
+python3 mappo_main.py
+pip3 install jax
+pip3 install flax
+pip3 install safetensors
+pip3 install distrax
+pip3 install hydra-core
+pip3 install jaxmarl
+cd JaxMARL && pip3 install --ignore-installed -e . && cd ..
+export PYTHONPATH=JaxMARL:$PYTHONPATH
+pip3 install matplotlib
+pip3 install brax==0.10.3
+
+pip3 install gymnax
+pip3 install wandb
+pip3 install pettingzoo
+pip3 install scikit-image
+
+pip3 install tensorflow
+
+pip3 install tqdm
+pip3 install einops

@@ -1,0 +1,1 @@
+need install https://github.com/AIRI-Institute/aij_multiagent_rl/tree/main
